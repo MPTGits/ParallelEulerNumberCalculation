@@ -7,7 +7,7 @@ class CLIArgumentsConst:
 
 class DefaultArgumentsValuesConst:
     PROCESSORS = 1
-    PRECISION = 30  000
+    PRECISION = 3000
     OUTPUT_FILE_NAME = 'eulerNumCalculation'
     GRANULARITY = 1
 
