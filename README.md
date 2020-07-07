@@ -7,8 +7,14 @@
 <li>-q  - If passed program doesn’t print to the STDOUT(not fully implemented).</li>
 <li>-p {integer} - Number of members of the sequence to be summed up.(default = 3000)</li>
 <li>-t {integer} - Number of processes to be used.(default = 1)</li>
-<li>-o {name of file} - File in which the output will be saved(default = 'eulerNumCalculation_{timestamp}.txt')</li>
+<li>-o {name of file} - File in which the output will be saved(default = './eulerNumCalculation_{timestamp}.txt')</li>
 </ul>
+
+Example call from cmd for 10 000 members of the partial sum executed with 8 processes with output saved to C:\Temp\tmp.txt:
+```shell
+python parallel_euler_number.py -p 10000 -t 8 -o C:\Temp\tmp.txt
+```
+
 <p>NOTE: Current precision of the output number is set to 100 000 this should cover partial sums up to around 7000 members. Will add <precision> parameter to command line call in future.</p>
 
 <h2>Some test results</h2>
