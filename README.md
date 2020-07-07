@@ -9,12 +9,10 @@
 <li>-t <integer> - Number of processes to be used.(default = 1)</li>
 <li>-o <name of file> - File in which the output will be saved(default = 'eulerNumCalculation_{timestamp}.txt')</li>
 </ul>
-<p>
-NOTE: 
-Current precision of the output number is set to 100 000 this should cover partial sums up to around 7000 members. Will add <precision> parameter to command line call in future.
-</p>
+<p>NOTE: Current precision of the output number is set to 100 000 this should cover partial sums up to around 7000 members. Will add <precision> parameter to command line call in future.</p>
 
 <h2>Some test results</h2>
+<p>NOTE: The precision in the graphs is the number of acurate digits in the euler number(it is not the number of member of the partial sum)</p>
 <b>Code was run on the following machine:</b>
 <ul>
 <li>Model: Intel Xeon CPU E5-2660 2.20 GHz </li>
@@ -22,7 +20,7 @@ Current precision of the output number is set to 100 000 this should cover parti
 <li>CPU(s): 32 </li>
 <li>Number of processors: 2 physical </li>
 <li>RAM: 64GB </li>
-<ul>
-<p>NOTE: The precision in the graphs isn't the number of acurate digits in the euler number(it is not the number of member of the partial sum)</p>
+</ul>
+ 
 <img src="https://i.ibb.co/xLM9Y9y/1.png"/>
 <img src="https://i.ibb.co/hx5Mkpd/2.png"/>
