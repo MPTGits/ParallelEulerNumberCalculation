@@ -18,9 +18,10 @@ def factorial(start, end):
 
 
 def calculate_euler_number_with_precision(start_idx, end_idx, d):
+    getcontext().prec = 100000
     sum = Decimal(0)
     print(f'Starting execution of [{start_idx},{end_idx}] by process {os.getpid()}')
-    for k in range(start_idx,end_idx+1):
+    for k in range(start_idx, end_idx+1):
         print(f'Executing process {os.getpid()} for index {k}')
         max_computed_value = max(key for key in d.keys() if key <= 2*k)
         d[2 * k] = d[max_computed_value]*factorial(max_computed_value + 1, 2*k)
@@ -50,9 +51,11 @@ def parrale_sum(n, num_processes, granularity, quiet_output=False):
 if __name__ == '__main__':
     commands_dict = get_commands_arguments_dict(sys.argv)
     commands = ArgumentParser(**commands_dict)
-    getcontext().prec = commands.precision
+    getcontext().prec = 100000
     start = time.perf_counter()
-    res = parrale_sum(commands.precision, commands.num_processors, commands.granularity, commands.quiet_output)
+    euler_number = parrale_sum(commands.precision, commands.num_processors, commands.granularity, commands.quiet_output)
     end = time.perf_counter()
     print(f'Time took for execution {int((end - start)*1000)}ms with '
           f'{commands.num_processors} processors and granularity {commands.granularity}')
+    with open(commands.save_to_file, 'w+') as f:
+        f.write(str(euler_number))
