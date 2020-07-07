@@ -23,6 +23,6 @@ Current precision of the output number is set to 100 000 this should cover parti
 <li>Number of processors: 2 physical </li>
 <li>RAM: 64GB </li>
 <ul>
-
+<p>NOTE: The precision in the graphs isn't the number of acurate digits in the euler number(it is not the number of member of the partial sum)</p>
 <img src="https://i.ibb.co/xLM9Y9y/1.png"/>
 <img src="https://i.ibb.co/hx5Mkpd/2.png"/>
