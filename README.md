@@ -12,7 +12,7 @@
 
 Example call from cmd for 10 000 members of the partial sum executed with 8 processes with output saved to C:\Temp\tmp.txt:
 ```shell
-python parallel_euler_number.py -p 10000 -t 8 -o C:\Temp\tmp.txt
+python3 parallel_euler_number.py -p 10000 -t 8 -o C:\Temp\tmp.txt
 ```
 
 <p>NOTE: Current precision of the output number is set to 100 000 this should cover partial sums up to around 7000 members. Will add <precision> parameter to command line call in future.</p>
