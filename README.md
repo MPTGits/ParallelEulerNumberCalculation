@@ -5,9 +5,9 @@
 <a href="https://www.codecogs.com/eqnedit.php?latex=e&space;=&space;\sum&space;\frac{2*k&plus;1}{(2*k)!}&space;,k&space;=&space;0...inf" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e&space;=&space;\sum&space;\frac{2*k&plus;1}{(2*k)!}&space;,k&space;=&space;0...inf" title="e = \sum \frac{2*k+1}{(2*k)!} ,k = 0...inf" /></a>
 <ul>
 <li>-q  - If passed program doesn’t print to the STDOUT(not fully implemented).</li>
-<li>-p <integer> - Number of members of the sequence to be summed up.(default = 10 000)</li>
-<li>-t <integer> - Number of processes to be used.(default = 1)</li>
-<li>-o <name of file> - File in which the output will be saved(default = 'eulerNumCalculation_{timestamp}.txt')</li>
+<li>-p {integer} - Number of members of the sequence to be summed up.(default = 10 000)</li>
+<li>-t {integer} - Number of processes to be used.(default = 1)</li>
+<li>-o {name of file} - File in which the output will be saved(default = 'eulerNumCalculation_{timestamp}.txt')</li>
 </ul>
 <p>NOTE: Current precision of the output number is set to 100 000 this should cover partial sums up to around 7000 members. Will add <precision> parameter to command line call in future.</p>
 
